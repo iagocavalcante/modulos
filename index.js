@@ -62,11 +62,20 @@ basicCSV.readCSV("estado-teste.csv",{
  function (error, rows){
   	for (i = 0; i < rows.length; i++) {
   		for (j = 0; j < rows[i].length; j++) {
+  			var indice = -1;
+  			var similaridade = -1;
 	  		for(k = 0; k < dic.length; k++){
-	  			if(nt.JaroWinklerDistance(dic[k], rows[i][j]) > 0.85){
-	  				rows[i][j] = rows[i][j].replace(rows[i][j], dic[k]);
+	  			var temp = nt.JaroWinklerDistance(dic[k], rows[i][j]); 
+	  			if( temp > similaridade ){
+	  				indice = k;
+	  				similaridade = temp;
+	  				
 	  			}	
 	  		}
+	  		if(similaridade > 0.85){
+	  			rows[i][j] = rows[i][j].replace(rows[i][j], dic[indice]);
+	  		}
+
 	  			str += rows[i][j] + delimiter;
   		}
   		str += '\n';
