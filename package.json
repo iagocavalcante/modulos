@@ -6,6 +6,8 @@
   ,
   "dependencies" : {
     "csv": "0.3.0",
-    "underscore": "*"
+    "underscore": "*",
+    "basic-csv": "0.0.2",
+    "natural": "0.2.1"
   }
 }
