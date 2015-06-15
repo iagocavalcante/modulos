@@ -72,7 +72,8 @@ basicCSV.readCSV("estado-teste.csv",{
 	  				
 	  			}	
 	  		}
-	  		if(similaridade > 0.85){
+	  		if(similaridade > 0.90){
+	  			
 	  			rows[i][j] = rows[i][j].replace(rows[i][j], dic[indice]);
 	  		}
 
