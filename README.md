@@ -1,1 +1,1 @@
-Criação de módulo para tratamento de campos usando de uma base de dados usando levenshtein
+Criação de módulo para tratamento de campos de uma base de dados usando levenshtein
