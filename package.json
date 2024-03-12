@@ -8,7 +8,7 @@
     "csv": "5.3.1",
     "underscore": "*",
     "basic-csv": "0.0.2",
-    "natural": "0.6.3",
+    "natural": "6.12.0",
     "csv-stream":"0.2.0"
   }
 }
